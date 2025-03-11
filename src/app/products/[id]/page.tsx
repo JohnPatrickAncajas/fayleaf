@@ -1,36 +1,24 @@
-import { GetServerSideProps } from 'next';
-import { prisma } from '../../lib/db';
+import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { prisma } from '../../../lib/db';
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { id } = context.params!;
+async function getProduct(id: string) {
   const product = await prisma.product.findUnique({
-    where: { id: String(id) },
+    where: { id },
     include: { category: true },
   });
 
   if (!product) {
-    return {
-      notFound: true,
-    };
+    notFound();
   }
 
-  return {
-    props: { product },
-  };
-};
-
-interface Product {
-  id: string;
-  name: string;
-  price: number;
-  description: string;
-  category: {
-    name: string;
-  };
+  return product;
 }
 
-const ProductPage = ({ product }: { product: Product }) => {
+export default async function ProductPage({ params }: { params: { id: string } }) {
+  const { id } = await params;
+  const product = await getProduct(id);
+
   return (
     <main className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8">{product.name}</h1>
@@ -42,6 +30,4 @@ const ProductPage = ({ product }: { product: Product }) => {
       </Link>
     </main>
   );
-};
-
-export default ProductPage;
+}
