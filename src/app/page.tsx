@@ -1,11 +1,11 @@
-import Link from 'next/link'
-import { prisma } from '../lib/db'
+import Link from 'next/link';
+import { prisma } from '../lib/db';
 
 export default async function Home() {
   const products = await prisma.product.findMany({
     take: 4,
     include: { category: true },
-  })
+  });
 
   return (
     <main className="container mx-auto px-4 py-8">
@@ -23,5 +23,5 @@ export default async function Home() {
         ))}
       </div>
     </main>
-  )
+  );
 }
