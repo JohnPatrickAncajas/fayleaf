@@ -3,7 +3,7 @@ import { prisma } from '../lib/db';
 
 export default async function Home() {
   const products = await prisma.product.findMany({
-    take: 4,
+    take: 24,
     include: { category: true },
   });
 
