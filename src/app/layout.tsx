@@ -13,7 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Florva",
+  title: "Fayleaf",
+  // Used to be Florva but changed to Fayleaf because the previous one sounds more like a magic spell than a plant ecommerce site.
+  // Inspired by Bayleef, the Leaf Pokemon from Pokemon Generation 2 which is also the Grass-type starter of said generation.
   description: "Your one-stop shop for all things plants",
 };
 
