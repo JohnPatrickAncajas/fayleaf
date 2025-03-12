@@ -20,6 +20,9 @@ export default function Navbar() {
           <Link href="/contact" className="hover:text-green-200">
             Contact
           </Link>
+          <Link href="/auth" className="hover:text-green-200">
+            Login/Register
+          </Link>
         </div>
       </div>
     </nav>
