@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+"use client";
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { CartProvider } from "../context/CartContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,13 +16,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Fayleaf",
-  // Used to be Florva but changed to Fayleaf because the previous one sounds more like a magic spell than a plant ecommerce site.
-  // Inspired by Bayleef, the Leaf Pokemon from Pokemon Generation 2 which is also the Grass-type starter of said generation.
-  description: "Your one-stop shop for all things plants",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,9 +26,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <CartProvider>
+          <Navbar />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

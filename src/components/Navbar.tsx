@@ -23,6 +23,9 @@ export default function Navbar() {
           <Link href="/auth" className="hover:text-green-200">
             Login/Register
           </Link>
+          <Link href="/cart" className="hover:text-green-200">
+            Cart
+          </Link>
         </div>
       </div>
     </nav>
