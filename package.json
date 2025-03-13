@@ -1,6 +1,6 @@
 {
-  "name": "florva",
-  "version": "0.1.0",
+  "name": "fayleaf",
+  "version": "0.8.1",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
