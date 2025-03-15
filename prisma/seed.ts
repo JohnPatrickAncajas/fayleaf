@@ -400,7 +400,7 @@ async function main(): Promise<void> {
       stock: 50,
       categoryId: categoryMap["Flowers"],
       imageUrl: "/images/tulip.jpg",
-      // 
+      // Photo by Ananthu Selvam on Unsplash | https://unsplash.com/photos/red-tulips-in-white-ceramic-vase-62saZ_T5AP0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Sunflower",
@@ -409,6 +409,7 @@ async function main(): Promise<void> {
       stock: 40,
       categoryId: categoryMap["Flowers"],
       imageUrl: "/images/sunflower.jpg",
+      // Photo by Matthias Oberholzer on Unsplash | https://unsplash.com/photos/yellow-sunflower-gM5msl7rP2k?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Dahlia",
@@ -417,6 +418,7 @@ async function main(): Promise<void> {
       stock: 25,
       categoryId: categoryMap["Flowers"],
       imageUrl: "/images/dahlia.jpg",
+      // Photo by Timo C. Dinger on Unsplash | https://unsplash.com/photos/pink-flowers-in-tilt-shift-lens-GjQ9mpJg4OQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Lily",
@@ -425,6 +427,7 @@ async function main(): Promise<void> {
       stock: 30,
       categoryId: categoryMap["Flowers"],
       imageUrl: "/images/lily.jpg",
+      // Photo by Serafima Lazarenko on Unsplash | https://unsplash.com/photos/pink-flowers-in-tilt-shift-lens-GjQ9mpJg4OQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Pansy",
@@ -433,6 +436,7 @@ async function main(): Promise<void> {
       stock: 60,
       categoryId: categoryMap["Flowers"],
       imageUrl: "/images/pansy.jpg",
+      // Photo by mostafa meraji on Unsplash | https://unsplash.com/photos/white-flowers-_iVuWPrfCZI?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Marigold",
@@ -441,6 +445,7 @@ async function main(): Promise<void> {
       stock: 55,
       categoryId: categoryMap["Flowers"],
       imageUrl: "/images/marigold.jpg",
+      // Photo by Julia Kwiek on Unsplash | https://unsplash.com/photos/orange-flowers-with-green-leaves-2j8X-RpB1sM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Zinnia",
@@ -449,6 +454,7 @@ async function main(): Promise<void> {
       stock: 45,
       categoryId: categoryMap["Flowers"],
       imageUrl: "/images/zinnia.jpg",
+      // Photo by Joanna Swan on Unsplash | https://unsplash.com/photos/pink-and-red-flowers-in-tilt-shift-lens-P16UKYi8rAA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Petunia",
@@ -457,6 +463,7 @@ async function main(): Promise<void> {
       stock: 50,
       categoryId: categoryMap["Flowers"],
       imageUrl: "/images/petunia.jpg",
+      // Photo by Emma Henderson on Unsplash | https://unsplash.com/photos/selective-focus-photography-of-multicolored-flowers-GAHh-21dQ-8?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
   ]
 
