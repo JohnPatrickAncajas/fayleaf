@@ -47,9 +47,11 @@ export default function ProductDetailsPage() {
   }, [params.id]);
 
   const handleAddToCart = () => {
-    addToCart({ productId: product.id, name: product.name, price: product.price, quantity });
-    setShowPopup(true);
-    setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
+    if (product) {
+      addToCart({ productId: product.id, name: product.name, price: product.price, quantity });
+      setShowPopup(true);
+      setTimeout(() => setShowPopup(false), 3000);
+    }
   };
 
   if (!product) {
