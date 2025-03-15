@@ -118,7 +118,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(18.99),
       stock: 14,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "/images/money-plant.jpg",
+      imageUrl: "/images/chinese-money-plant.jpg",
       // Photo by Natalia Gasiorowska on Unsplash | https://unsplash.com/photos/a-plant-with-green-leaves-in-a-white-basket-2NyDhFWvPc8?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
@@ -127,7 +127,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(34.99),
       stock: 7,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "/images/calathea.jpg",
+      imageUrl: "/images/calathea-orbifolia.jpg",
       // Photo by Gigi Visacri on Unsplash | https://unsplash.com/photos/a-green-plant-in-a-white-pot-on-a-table-rNjEk8d2vmQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
 
