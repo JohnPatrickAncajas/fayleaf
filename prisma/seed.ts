@@ -205,7 +205,7 @@ async function main(): Promise<void> {
       // Photo by EJ Strat on Unsplash | https://unsplash.com/photos/a-bunch-of-purple-flowers-that-are-on-a-plant-4CxvctOFmVg?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
 
-    // Succulents (8)
+    // Succulents (7)
     {
       name: "Aloe Vera",
       description: "A succulent plant with medicinal properties and soothing gel inside its leaves",
@@ -213,7 +213,7 @@ async function main(): Promise<void> {
       stock: 20,
       categoryId: categoryMap["Succulents"],
       imageUrl: "/images/aloe-vera.jpg",
-      // 
+      // Photo by Stephanie Harvey on Unsplash | https://unsplash.com/photos/aloe-vera-in-white-pot-T0inbt7nRME?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Echeveria",
@@ -222,6 +222,7 @@ async function main(): Promise<void> {
       stock: 25,
       categoryId: categoryMap["Succulents"],
       imageUrl: "/images/echeveria.jpg",
+      // Photo by Wander Fleur on Unsplash | https://unsplash.com/photos/green-succulent-plant-in-white-pot-cB1UL_11g5E?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Jade Plant",
@@ -230,6 +231,7 @@ async function main(): Promise<void> {
       stock: 15,
       categoryId: categoryMap["Succulents"],
       imageUrl: "/images/jade-plant.jpg",
+      // Photo by Susan Wilkinson on Unsplash | https://unsplash.com/photos/green-plant-on-white-ceramic-pot-Q0w0LGkHokE?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Haworthia",
@@ -238,6 +240,7 @@ async function main(): Promise<void> {
       stock: 30,
       categoryId: categoryMap["Succulents"],
       imageUrl: "/images/haworthia.jpg",
+      // Photo by Audumbar Haldankar on Unsplash | https://unsplash.com/photos/a-close-up-of-a-plant-in-a-pot-on-a-table-uNv0jYCzVPs?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "String of Pearls",
@@ -246,6 +249,7 @@ async function main(): Promise<void> {
       stock: 12,
       categoryId: categoryMap["Succulents"],
       imageUrl: "/images/string-of-pearls.jpg",
+      // Photo by Kelly Sikkema on Unsplash | https://unsplash.com/photos/a-potted-plant-sitting-on-top-of-a-window-sill-1b7M8MN8xdk?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Burro's Tail",
@@ -254,6 +258,7 @@ async function main(): Promise<void> {
       stock: 14,
       categoryId: categoryMap["Succulents"],
       imageUrl: "/images/burros-tail.jpg",
+      // Photo by Audumbar Haldankar on Unsplash | https://unsplash.com/photos/a-small-green-plant-in-a-white-pot-XZQA_DI5Rm4?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Zebra Plant",
@@ -262,17 +267,11 @@ async function main(): Promise<void> {
       stock: 22,
       categoryId: categoryMap["Succulents"],
       imageUrl: "/images/zebra-plant.jpg",
-    },
-    {
-      name: "Panda Plant",
-      description: "A fuzzy succulent with velvety leaves edged in brown",
-      price: new Prisma.Decimal(9.49),
-      stock: 18,
-      categoryId: categoryMap["Succulents"],
-      imageUrl: "/images/panda-plant.jpg",
+      // Photo by Kara Eads on Unsplash | https://unsplash.com/photos/green-aloe-vera-plant-ylNifQf8TiY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+
     },
 
-    // Herbs (8)
+    // Herbs (7)
     {
       name: "Basil",
       description: "A popular culinary herb with aromatic leaves used in many cuisines",
@@ -280,6 +279,7 @@ async function main(): Promise<void> {
       stock: 30,
       categoryId: categoryMap["Herbs"],
       imageUrl: "/images/basil.jpg",
+      // Photo by Alissa De Leva on Unsplash | https://unsplash.com/photos/green-leaves-BEabqjCtzVo?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Mint",
@@ -288,14 +288,16 @@ async function main(): Promise<void> {
       stock: 35,
       categoryId: categoryMap["Herbs"],
       imageUrl: "/images/mint.jpg",
+      // Photo by Victor Serban on Unsplash | https://unsplash.com/photos/green-leaves-in-macro-lens-whTrv7kvGJY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Rosemary",
-      description: "A woody herb with needle-like leaves and a strong aroma",
+      description: "A woody herb with needlel-ike leaves and a strong aroma",
       price: new Prisma.Decimal(5.99),
       stock: 25,
       categoryId: categoryMap["Herbs"],
       imageUrl: "/images/rosemary.jpg",
+      // Photo by Zé Maria on Unsplash | https://unsplash.com/photos/green-plant-on-brown-clay-pot-v5Px2pav-MM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Thyme",
@@ -304,6 +306,7 @@ async function main(): Promise<void> {
       stock: 28,
       categoryId: categoryMap["Herbs"],
       imageUrl: "/images/thyme.jpg",
+      // Photo by Anja Junghans on Unsplash | https://unsplash.com/photos/pink-flowers-in-tilt-shift-lens-qjuJBB5BsAY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Cilantro",
@@ -312,6 +315,7 @@ async function main(): Promise<void> {
       stock: 40,
       categoryId: categoryMap["Herbs"],
       imageUrl: "/images/cilantro.jpg",
+      // Photo by JACQUELINE BRANDWAYN on Unsplash | https://unsplash.com/photos/green-leaves-plant-during-daytime-sNjKMbL5xWU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Parsley",
@@ -320,6 +324,7 @@ async function main(): Promise<void> {
       stock: 38,
       categoryId: categoryMap["Herbs"],
       imageUrl: "/images/parsley.jpg",
+      // Photo by Chandan Chaurasia on Unsplash | https://unsplash.com/photos/green-plant-in-close-up-photography-N73L0EzbJ8Y?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Sage",
@@ -328,14 +333,7 @@ async function main(): Promise<void> {
       stock: 22,
       categoryId: categoryMap["Herbs"],
       imageUrl: "/images/sage.jpg",
-    },
-    {
-      name: "Chives",
-      description: "A mild onion-flavored herb with slender, hollow stems",
-      price: new Prisma.Decimal(4.29),
-      stock: 32,
-      categoryId: categoryMap["Herbs"],
-      imageUrl: "/images/chives.jpg",
+      // Photo by Jackie Hope on Unsplash | https://unsplash.com/photos/green-and-purple-leaves-plant-96zlc1Bt51w?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
 
     // Trees (6)
@@ -346,6 +344,7 @@ async function main(): Promise<void> {
       stock: 3,
       categoryId: categoryMap["Trees"],
       imageUrl: "/images/oak-tree.jpg",
+      // Photo by Wolfgang Hasselmann on Unsplash | https://unsplash.com/photos/green-tree-on-green-grass-field-under-blue-sky-during-daytime-pe-GUtsGMsM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Maple Tree",
@@ -354,6 +353,7 @@ async function main(): Promise<void> {
       stock: 5,
       categoryId: categoryMap["Trees"],
       imageUrl: "/images/maple-tree.jpg",
+      // Photo by Steve Haines on Unsplash | https://unsplash.com/photos/red-leaf-tree-near-body-of-water-during-daytime-BsmkN8A8MZA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Cherry Blossom Tree",
@@ -361,7 +361,8 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(129.99),
       stock: 2,
       categoryId: categoryMap["Trees"],
-      imageUrl: "/images/cherry-blossom.jpg",
+      imageUrl: "/images/cherry-blossom-tree.jpg",
+      // Photo by Alex Ramon on Unsplash | https://unsplash.com/photos/a-tree-in-the-middle-of-a-grassy-field-5Sd_MdxMtdA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Weeping Willow",
@@ -369,7 +370,8 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(79.99),
       stock: 4,
       categoryId: categoryMap["Trees"],
-      imageUrl: "/images/weeping-willow.jpg",
+      imageUrl: "/images/weeping-willow-tree.jpg",
+      // Photo by Fran on Unsplash | https://unsplash.com/photos/a-tree-with-yellow-leaves-next-to-a-body-of-water-u2HDybvBrHU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Magnolia Tree",
@@ -378,6 +380,7 @@ async function main(): Promise<void> {
       stock: 3,
       categoryId: categoryMap["Trees"],
       imageUrl: "/images/magnolia-tree.jpg",
+      // Photo by Alexandra on Unsplash | https://unsplash.com/photos/pink-cherry-blossom-tree-under-blue-sky-during-daytime-jjoQnNS1bu4?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Bonsai Juniper",
@@ -385,7 +388,8 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(59.99),
       stock: 8,
       categoryId: categoryMap["Trees"],
-      imageUrl: "/images/bonsai-juniper.jpg",
+      imageUrl: "/images/bonsai-juniper-tree.jpg",
+      // Photo by Linmiao Xu on Unsplash | https://unsplash.com/photos/a-bonsai-tree-in-a-pot-on-a-rock-garden-hC33lVuI_co?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
 
     // Flowers (8)
@@ -396,6 +400,7 @@ async function main(): Promise<void> {
       stock: 50,
       categoryId: categoryMap["Flowers"],
       imageUrl: "/images/tulip.jpg",
+      // 
     },
     {
       name: "Sunflower",
