@@ -31,18 +31,9 @@ a:hover {
   text-decoration: underline;
 }
 
-.bg-green-600 {
-  background-color: #228b22;
-}
 
-.bg-brown-800 {
-  background-color: #8b4513;
-}
-
-.text-green-900 {
-  color: #006400;
-}
-
-.hover\:text-green-200:hover {
-  color: #c8e6c9;
+.bg-green-400 {
+  background-image: url('/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
 }

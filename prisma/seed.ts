@@ -47,6 +47,7 @@ async function main(): Promise<void> {
       stock: 10,
       categoryId: categoryMap["Indoor Plants"],
       imageUrl: "/images/monstera-deliciosa.jpg",
+      // Photo by feey on Unsplash | https://unsplash.com/photos/green-plant-on-white-ceramic-pot-bwsTJMnhcwE?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Fiddle Leaf Fig",
@@ -55,6 +56,7 @@ async function main(): Promise<void> {
       stock: 5,
       categoryId: categoryMap["Indoor Plants"],
       imageUrl: "/images/fiddle-leaf-fig.jpg",
+      // Photo by Kara Eads on Unsplash | https://unsplash.com/photos/green-leafed-plant-in-white-pot-EbLX7oRo4vI?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Pothos",
@@ -63,6 +65,7 @@ async function main(): Promise<void> {
       stock: 25,
       categoryId: categoryMap["Indoor Plants"],
       imageUrl: "/images/pothos.jpg",
+      // Photo by feey on Unsplash | https://unsplash.com/photos/green-plant-on-white-ceramic-vase-GG9Gh1_FjbM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Snake Plant",
@@ -71,6 +74,7 @@ async function main(): Promise<void> {
       stock: 18,
       categoryId: categoryMap["Indoor Plants"],
       imageUrl: "/images/snake-plant.jpg",
+      // Photo by Gabriella Clare Marino on Unsplash | https://unsplash.com/photos/green-plant-in-white-pot-m7Gos2-mS-A?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "ZZ Plant",
@@ -79,6 +83,7 @@ async function main(): Promise<void> {
       stock: 12,
       categoryId: categoryMap["Indoor Plants"],
       imageUrl: "/images/zz-plant.jpg",
+      //Photo by feey on Unsplash | https://unsplash.com/photos/a-person-holding-a-potted-plant-in-their-hands-1gwjE0c3PSQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Peace Lily",
