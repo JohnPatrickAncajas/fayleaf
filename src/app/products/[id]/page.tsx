@@ -27,6 +27,7 @@ interface Product {
 export default function ProductDetailsPage() {
   const [product, setProduct] = useState<Product | null>(null);
   const [quantity, setQuantity] = useState(1);
+  const [showPopup, setShowPopup] = useState(false);
   const { addToCart } = useCart();
   const router = useRouter();
   const params = useParams();
@@ -45,13 +46,19 @@ export default function ProductDetailsPage() {
     fetchProduct();
   }, [params.id]);
 
+  const handleAddToCart = () => {
+    addToCart({ productId: product.id, name: product.name, price: product.price, quantity });
+    setShowPopup(true);
+    setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
+  };
+
   if (!product) {
     return <div>Loading...</div>;
   }
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <button onClick={() => router.back()} className="mb-4 bg-gray-500 text-white px-4 py-2 rounded">
+      <button onClick={() => router.back()} className="mb-4 bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">
         Back
       </button>
       <div className="flex flex-col md:flex-row border p-4 rounded-lg">
@@ -76,8 +83,8 @@ export default function ProductDetailsPage() {
             </button>
           </div>
           <button
-            onClick={() => addToCart({ productId: product.id, name: product.name, price: product.price, quantity })}
-            className="bg-green-500 text-white px-4 py-2 rounded"
+            onClick={handleAddToCart}
+            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
           >
             Add to Cart
           </button>
@@ -86,6 +93,11 @@ export default function ProductDetailsPage() {
           <Image src={product.imageUrl || '/placeholder.png'} alt={product.name} width={500} height={500} className="rounded-lg" />
         </div>
       </div>
+      {showPopup && (
+        <div className="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded shadow-lg">
+          Added to cart!
+        </div>
+      )}
     </div>
   );
 }
