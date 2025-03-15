@@ -92,6 +92,7 @@ async function main(): Promise<void> {
       stock: 15,
       categoryId: categoryMap["Indoor Plants"],
       imageUrl: "/images/peace-lily.jpg",
+      // Photo by feey on Unsplash | https://unsplash.com/photos/person-holding-white-ceramic-mug-with-green-plant-lmczPemWjQQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Rubber Plant",
@@ -100,6 +101,7 @@ async function main(): Promise<void> {
       stock: 8,
       categoryId: categoryMap["Indoor Plants"],
       imageUrl: "/images/rubber-plant.jpg",
+      // Photo by Scott Webb on Unsplash | https://unsplash.com/photos/green-leaf-plant-on-brown-stem-Mp38Mp9TJH8?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Spider Plant",
@@ -108,6 +110,7 @@ async function main(): Promise<void> {
       stock: 30,
       categoryId: categoryMap["Indoor Plants"],
       imageUrl: "/images/spider-plant.jpg",
+      // Photo by Lucian Alexe on Unsplash | https://unsplash.com/photos/green-leaf-plant-in-pot-Si8rYoK5tf0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Chinese Money Plant",
@@ -116,6 +119,7 @@ async function main(): Promise<void> {
       stock: 14,
       categoryId: categoryMap["Indoor Plants"],
       imageUrl: "/images/money-plant.jpg",
+      // Photo by Natalia Gasiorowska on Unsplash | https://unsplash.com/photos/a-plant-with-green-leaves-in-a-white-basket-2NyDhFWvPc8?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Calathea Orbifolia",
@@ -124,6 +128,7 @@ async function main(): Promise<void> {
       stock: 7,
       categoryId: categoryMap["Indoor Plants"],
       imageUrl: "/images/calathea.jpg",
+      // Photo by Gigi Visacri on Unsplash | https://unsplash.com/photos/a-green-plant-in-a-white-pot-on-a-table-rNjEk8d2vmQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
 
     // Outdoor Plants (8)
@@ -134,6 +139,7 @@ async function main(): Promise<void> {
       stock: 15,
       categoryId: categoryMap["Outdoor Plants"],
       imageUrl: "/images/rose-bush.jpg",
+      // Photo by Irina Iriser on Unsplash | https://unsplash.com/photos/red-petal-flower-b_E4GcFpcFI?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Hydrangea",
@@ -142,6 +148,7 @@ async function main(): Promise<void> {
       stock: 12,
       categoryId: categoryMap["Outdoor Plants"],
       imageUrl: "/images/hydrangea.jpg",
+      // Photo by Josefin on Unsplash | https://unsplash.com/photos/blue-and-yellow-petaled-flowers-under-blue-sky-LvEOWMyr-Bc?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Azalea",
@@ -150,6 +157,7 @@ async function main(): Promise<void> {
       stock: 10,
       categoryId: categoryMap["Outdoor Plants"],
       imageUrl: "/images/azalea.jpg",
+      // Photo by Alli Remler on Unsplash | https://unsplash.com/photos/pink-flowers-in-tilt-shift-lens-xvgfN608odk?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Boxwood",
@@ -158,6 +166,7 @@ async function main(): Promise<void> {
       stock: 8,
       categoryId: categoryMap["Outdoor Plants"],
       imageUrl: "/images/boxwood.jpg",
+      // Photo by Anatoly Najmitenko on Unsplash | https://unsplash.com/photos/green-leaf-plants-under-white-and-gray-skies--yGFRuBHKVw?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Lavender",
@@ -166,6 +175,7 @@ async function main(): Promise<void> {
       stock: 20,
       categoryId: categoryMap["Outdoor Plants"],
       imageUrl: "/images/lavender.jpg",
+      // Photo by Mario Mendez on Unsplash | https://unsplash.com/photos/purple-flower-field-during-daytime-kkhww8996mg?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Hosta",
@@ -174,6 +184,7 @@ async function main(): Promise<void> {
       stock: 25,
       categoryId: categoryMap["Outdoor Plants"],
       imageUrl: "/images/hosta.jpg",
+      // Photo by Yoksel 🌿 Zok on Unsplash | https://unsplash.com/photos/green-outdoor-plant-I-dMihXQfU0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Peony",
@@ -182,6 +193,7 @@ async function main(): Promise<void> {
       stock: 10,
       categoryId: categoryMap["Outdoor Plants"],
       imageUrl: "/images/peony.jpg",
+      // Photo by Anna Evans on Unsplash | https://unsplash.com/photos/a-group-of-flowers-clUC2tTFOXQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
     {
       name: "Clematis",
@@ -190,6 +202,7 @@ async function main(): Promise<void> {
       stock: 15,
       categoryId: categoryMap["Outdoor Plants"],
       imageUrl: "/images/clematis.jpg",
+      // Photo by EJ Strat on Unsplash | https://unsplash.com/photos/a-bunch-of-purple-flowers-that-are-on-a-plant-4CxvctOFmVg?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
     },
 
     // Succulents (8)
@@ -200,6 +213,7 @@ async function main(): Promise<void> {
       stock: 20,
       categoryId: categoryMap["Succulents"],
       imageUrl: "/images/aloe-vera.jpg",
+      // 
     },
     {
       name: "Echeveria",
