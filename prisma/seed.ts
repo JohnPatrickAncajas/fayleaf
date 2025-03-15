@@ -3,6 +3,14 @@ import { hash } from "bcrypt"
 
 const prisma = new PrismaClient()
 
+// npx prisma migrate reset for resetting
+// npx prisma migrate dev for creating
+// npx prisma db push for pushing
+// npm run seed for seeding
+// npm run dev for running
+
+// reset -> push -> seed for full reset
+
 async function main(): Promise<void> {
   // Create categories if they don't exist
   const categories: string[] = ["Indoor Plants", "Outdoor Plants", "Succulents", "Herbs", "Trees", "Flowers"]
@@ -38,7 +46,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(29.99),
       stock: 10,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "https://example.com/monstera.jpg",
+      imageUrl: "/images/monstera-deliciosa.jpg",
     },
     {
       name: "Fiddle Leaf Fig",
@@ -46,7 +54,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(49.99),
       stock: 5,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "https://example.com/fiddle-leaf-fig.jpg",
+      imageUrl: "/images/fiddle-leaf-fig.jpg",
     },
     {
       name: "Pothos",
@@ -54,7 +62,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(15.99),
       stock: 25,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "https://example.com/pothos.jpg",
+      imageUrl: "/images/pothos.jpg",
     },
     {
       name: "Snake Plant",
@@ -62,7 +70,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(19.99),
       stock: 18,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "https://example.com/snake-plant.jpg",
+      imageUrl: "/images/snake-plant.jpg",
     },
     {
       name: "ZZ Plant",
@@ -70,7 +78,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(24.99),
       stock: 12,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "https://example.com/zz-plant.jpg",
+      imageUrl: "/images/zz-plant.jpg",
     },
     {
       name: "Peace Lily",
@@ -78,7 +86,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(22.99),
       stock: 15,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "https://example.com/peace-lily.jpg",
+      imageUrl: "/images/peace-lily.jpg",
     },
     {
       name: "Rubber Plant",
@@ -86,7 +94,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(27.99),
       stock: 8,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "https://example.com/rubber-plant.jpg",
+      imageUrl: "/images/rubber-plant.jpg",
     },
     {
       name: "Spider Plant",
@@ -94,7 +102,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(14.99),
       stock: 30,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "https://example.com/spider-plant.jpg",
+      imageUrl: "/images/spider-plant.jpg",
     },
     {
       name: "Chinese Money Plant",
@@ -102,7 +110,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(18.99),
       stock: 14,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "https://example.com/money-plant.jpg",
+      imageUrl: "/images/money-plant.jpg",
     },
     {
       name: "Calathea Orbifolia",
@@ -110,7 +118,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(34.99),
       stock: 7,
       categoryId: categoryMap["Indoor Plants"],
-      imageUrl: "https://example.com/calathea.jpg",
+      imageUrl: "/images/calathea.jpg",
     },
 
     // Outdoor Plants (8)
@@ -120,7 +128,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(19.99),
       stock: 15,
       categoryId: categoryMap["Outdoor Plants"],
-      imageUrl: "https://example.com/rose-bush.jpg",
+      imageUrl: "/images/rose-bush.jpg",
     },
     {
       name: "Hydrangea",
@@ -128,7 +136,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(24.99),
       stock: 12,
       categoryId: categoryMap["Outdoor Plants"],
-      imageUrl: "https://example.com/hydrangea.jpg",
+      imageUrl: "/images/hydrangea.jpg",
     },
     {
       name: "Azalea",
@@ -136,7 +144,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(22.99),
       stock: 10,
       categoryId: categoryMap["Outdoor Plants"],
-      imageUrl: "https://example.com/azalea.jpg",
+      imageUrl: "/images/azalea.jpg",
     },
     {
       name: "Boxwood",
@@ -144,7 +152,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(29.99),
       stock: 8,
       categoryId: categoryMap["Outdoor Plants"],
-      imageUrl: "https://example.com/boxwood.jpg",
+      imageUrl: "/images/boxwood.jpg",
     },
     {
       name: "Lavender",
@@ -152,7 +160,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(15.99),
       stock: 20,
       categoryId: categoryMap["Outdoor Plants"],
-      imageUrl: "https://example.com/lavender.jpg",
+      imageUrl: "/images/lavender.jpg",
     },
     {
       name: "Hosta",
@@ -160,7 +168,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(12.99),
       stock: 25,
       categoryId: categoryMap["Outdoor Plants"],
-      imageUrl: "https://example.com/hosta.jpg",
+      imageUrl: "/images/hosta.jpg",
     },
     {
       name: "Peony",
@@ -168,7 +176,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(27.99),
       stock: 10,
       categoryId: categoryMap["Outdoor Plants"],
-      imageUrl: "https://example.com/peony.jpg",
+      imageUrl: "/images/peony.jpg",
     },
     {
       name: "Clematis",
@@ -176,7 +184,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(18.99),
       stock: 15,
       categoryId: categoryMap["Outdoor Plants"],
-      imageUrl: "https://example.com/clematis.jpg",
+      imageUrl: "/images/clematis.jpg",
     },
 
     // Succulents (8)
@@ -186,7 +194,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(9.99),
       stock: 20,
       categoryId: categoryMap["Succulents"],
-      imageUrl: "https://example.com/aloe-vera.jpg",
+      imageUrl: "/images/aloe-vera.jpg",
     },
     {
       name: "Echeveria",
@@ -194,7 +202,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(8.99),
       stock: 25,
       categoryId: categoryMap["Succulents"],
-      imageUrl: "https://example.com/echeveria.jpg",
+      imageUrl: "/images/echeveria.jpg",
     },
     {
       name: "Jade Plant",
@@ -202,7 +210,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(12.99),
       stock: 15,
       categoryId: categoryMap["Succulents"],
-      imageUrl: "https://example.com/jade-plant.jpg",
+      imageUrl: "/images/jade-plant.jpg",
     },
     {
       name: "Haworthia",
@@ -210,7 +218,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(7.99),
       stock: 30,
       categoryId: categoryMap["Succulents"],
-      imageUrl: "https://example.com/haworthia.jpg",
+      imageUrl: "/images/haworthia.jpg",
     },
     {
       name: "String of Pearls",
@@ -218,7 +226,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(14.99),
       stock: 12,
       categoryId: categoryMap["Succulents"],
-      imageUrl: "https://example.com/string-of-pearls.jpg",
+      imageUrl: "/images/string-of-pearls.jpg",
     },
     {
       name: "Burro's Tail",
@@ -226,7 +234,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(13.99),
       stock: 14,
       categoryId: categoryMap["Succulents"],
-      imageUrl: "https://example.com/burros-tail.jpg",
+      imageUrl: "/images/burros-tail.jpg",
     },
     {
       name: "Zebra Plant",
@@ -234,7 +242,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(8.49),
       stock: 22,
       categoryId: categoryMap["Succulents"],
-      imageUrl: "https://example.com/zebra-plant.jpg",
+      imageUrl: "/images/zebra-plant.jpg",
     },
     {
       name: "Panda Plant",
@@ -242,7 +250,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(9.49),
       stock: 18,
       categoryId: categoryMap["Succulents"],
-      imageUrl: "https://example.com/panda-plant.jpg",
+      imageUrl: "/images/panda-plant.jpg",
     },
 
     // Herbs (8)
@@ -252,7 +260,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(4.99),
       stock: 30,
       categoryId: categoryMap["Herbs"],
-      imageUrl: "https://example.com/basil.jpg",
+      imageUrl: "/images/basil.jpg",
     },
     {
       name: "Mint",
@@ -260,7 +268,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(4.49),
       stock: 35,
       categoryId: categoryMap["Herbs"],
-      imageUrl: "https://example.com/mint.jpg",
+      imageUrl: "/images/mint.jpg",
     },
     {
       name: "Rosemary",
@@ -268,7 +276,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(5.99),
       stock: 25,
       categoryId: categoryMap["Herbs"],
-      imageUrl: "https://example.com/rosemary.jpg",
+      imageUrl: "/images/rosemary.jpg",
     },
     {
       name: "Thyme",
@@ -276,7 +284,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(4.79),
       stock: 28,
       categoryId: categoryMap["Herbs"],
-      imageUrl: "https://example.com/thyme.jpg",
+      imageUrl: "/images/thyme.jpg",
     },
     {
       name: "Cilantro",
@@ -284,7 +292,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(3.99),
       stock: 40,
       categoryId: categoryMap["Herbs"],
-      imageUrl: "https://example.com/cilantro.jpg",
+      imageUrl: "/images/cilantro.jpg",
     },
     {
       name: "Parsley",
@@ -292,7 +300,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(3.89),
       stock: 38,
       categoryId: categoryMap["Herbs"],
-      imageUrl: "https://example.com/parsley.jpg",
+      imageUrl: "/images/parsley.jpg",
     },
     {
       name: "Sage",
@@ -300,7 +308,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(5.49),
       stock: 22,
       categoryId: categoryMap["Herbs"],
-      imageUrl: "https://example.com/sage.jpg",
+      imageUrl: "/images/sage.jpg",
     },
     {
       name: "Chives",
@@ -308,7 +316,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(4.29),
       stock: 32,
       categoryId: categoryMap["Herbs"],
-      imageUrl: "https://example.com/chives.jpg",
+      imageUrl: "/images/chives.jpg",
     },
 
     // Trees (6)
@@ -318,7 +326,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(99.99),
       stock: 3,
       categoryId: categoryMap["Trees"],
-      imageUrl: "https://example.com/oak-tree.jpg",
+      imageUrl: "/images/oak-tree.jpg",
     },
     {
       name: "Maple Tree",
@@ -326,7 +334,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(89.99),
       stock: 5,
       categoryId: categoryMap["Trees"],
-      imageUrl: "https://example.com/maple-tree.jpg",
+      imageUrl: "/images/maple-tree.jpg",
     },
     {
       name: "Cherry Blossom Tree",
@@ -334,7 +342,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(129.99),
       stock: 2,
       categoryId: categoryMap["Trees"],
-      imageUrl: "https://example.com/cherry-blossom.jpg",
+      imageUrl: "/images/cherry-blossom.jpg",
     },
     {
       name: "Weeping Willow",
@@ -342,7 +350,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(79.99),
       stock: 4,
       categoryId: categoryMap["Trees"],
-      imageUrl: "https://example.com/weeping-willow.jpg",
+      imageUrl: "/images/weeping-willow.jpg",
     },
     {
       name: "Magnolia Tree",
@@ -350,7 +358,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(109.99),
       stock: 3,
       categoryId: categoryMap["Trees"],
-      imageUrl: "https://example.com/magnolia-tree.jpg",
+      imageUrl: "/images/magnolia-tree.jpg",
     },
     {
       name: "Bonsai Juniper",
@@ -358,7 +366,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(59.99),
       stock: 8,
       categoryId: categoryMap["Trees"],
-      imageUrl: "https://example.com/bonsai-juniper.jpg",
+      imageUrl: "/images/bonsai-juniper.jpg",
     },
 
     // Flowers (8)
@@ -368,7 +376,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(2.99),
       stock: 50,
       categoryId: categoryMap["Flowers"],
-      imageUrl: "https://example.com/tulip.jpg",
+      imageUrl: "/images/tulip.jpg",
     },
     {
       name: "Sunflower",
@@ -376,7 +384,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(3.99),
       stock: 40,
       categoryId: categoryMap["Flowers"],
-      imageUrl: "https://example.com/sunflower.jpg",
+      imageUrl: "/images/sunflower.jpg",
     },
     {
       name: "Dahlia",
@@ -384,7 +392,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(6.99),
       stock: 25,
       categoryId: categoryMap["Flowers"],
-      imageUrl: "https://example.com/dahlia.jpg",
+      imageUrl: "/images/dahlia.jpg",
     },
     {
       name: "Lily",
@@ -392,7 +400,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(5.99),
       stock: 30,
       categoryId: categoryMap["Flowers"],
-      imageUrl: "https://example.com/lily.jpg",
+      imageUrl: "/images/lily.jpg",
     },
     {
       name: "Pansy",
@@ -400,7 +408,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(1.99),
       stock: 60,
       categoryId: categoryMap["Flowers"],
-      imageUrl: "https://example.com/pansy.jpg",
+      imageUrl: "/images/pansy.jpg",
     },
     {
       name: "Marigold",
@@ -408,7 +416,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(2.49),
       stock: 55,
       categoryId: categoryMap["Flowers"],
-      imageUrl: "https://example.com/marigold.jpg",
+      imageUrl: "/images/marigold.jpg",
     },
     {
       name: "Zinnia",
@@ -416,7 +424,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(2.79),
       stock: 45,
       categoryId: categoryMap["Flowers"],
-      imageUrl: "https://example.com/zinnia.jpg",
+      imageUrl: "/images/zinnia.jpg",
     },
     {
       name: "Petunia",
@@ -424,7 +432,7 @@ async function main(): Promise<void> {
       price: new Prisma.Decimal(3.29),
       stock: 50,
       categoryId: categoryMap["Flowers"],
-      imageUrl: "https://example.com/petunia.jpg",
+      imageUrl: "/images/petunia.jpg",
     },
   ]
 
